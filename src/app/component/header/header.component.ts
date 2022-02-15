@@ -1,3 +1,4 @@
+import { ScrollService } from './../../scroll.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,10 +8,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  constructor(private service:ScrollService) { }
 
   ngOnInit(): void {
   }
  
   image:string="assets/img/image.jpg"
+
+  Tologo(section:any){
+    document.getElementById("logo")?.scrollIntoView({behavior:"smooth"});
+}
+Tostream(section:any){
+  document.getElementById("stream")?.scrollIntoView({behavior:"smooth"});
+}
+Tofooter(section:any){
+  document.getElementById("footer")?.scrollIntoView({behavior:"smooth"});
+}
+  
+
 }

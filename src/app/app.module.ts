@@ -12,6 +12,7 @@ import { LogosComponent } from './component/logos/logos.component';
 import { BadgesComponent } from './component/badges/badges.component';
 import { BannerComponent } from './component/banner/banner.component';
 import { ChartComponent } from './component/chart/chart.component';
+import { StreamComponent } from './component/stream/stream.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { ChartComponent } from './component/chart/chart.component';
     
     BadgesComponent,
     BannerComponent,
-    ChartComponent
+    ChartComponent,
+    StreamComponent
   ],
   imports: [
     BrowserModule,
